@@ -1,8 +1,8 @@
 # Custom blast databases
 
 This repo describes code used to generate custom blast databases with ncbi taxonomic identifiers for various projects. This includes:
-- refseq mitochondrial sequences
-- SILVA ribosomal databases
+- refseq mitochondrial sequences (accessed Oct 23)
+- SILVA ribosomal databases (accessed Oct 23)
 
 ### Mitochondrion blast database
 
@@ -23,7 +23,7 @@ wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/accession2taxid/nucl_gb.accession
 grep -e "^>" mitochondrion.1.1.genomic.fna | sed 's/>//g' | cut -f 1 -d " " > accessions.txt
 
 # write text file with accession and taxonomy id
-python accession2taxid.py
+python ../additional_scripts/accession2taxid.py
 
 # blastn
 source activate blast
