@@ -31,6 +31,7 @@ makeblastdb -dbtype nucl -in mitochondrion.1.1.genomic.fna -out refseq_mitochond
 conda deactivate
 
 # rm tmp
+rm mitochondrion.1.1.genomic.fna
 rm nucl_gb.accession2taxid.gz
 rm accessions.txt
 rm accession2taxid.txt
@@ -98,6 +99,7 @@ rm accession2taxid_ssu.txt
 rm accession2taxid.txt
 rm accession2taxid_unique.txt
 rm silva_138.1_lsu_ssu.fasta
+rm silva_138.fasta
 rm accessions_duplicate.txt
 rm accessions_unique.txt
 
