@@ -4,6 +4,8 @@ This repo describes code used to generate custom blast databases with ncbi taxon
 - refseq mitochondrial sequences (accessed Oct 23)
 - SILVA ribosomal databases (accessed Oct 23)
 
+The databases can be accessed from zenodo https://doi.org/10.5281/zenodo.8424777
+
 ### Mitochondrion blast database
 
 ```
@@ -128,3 +130,9 @@ blastn \
 conda deactivate
 ```
 
+### Compress blast databases
+
+```
+tar cvzf refseq_mitochondrion.tar.gz refseq_mitochondrion
+tar cvzf silva_138.tar.gz silva_138
+```
